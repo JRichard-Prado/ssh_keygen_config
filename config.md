@@ -30,3 +30,4 @@ consultar la correspondiente guía en GitHub: (https://help.github.com/articles/
 
  2. *sdf*
         `cd ~/.ssh`
+        `ls -al ~/.ssh/`

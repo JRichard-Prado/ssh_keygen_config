@@ -1,4 +1,5 @@
- ##Acerca de la claves SSH
+ ##Acerca de la claves SSH  
+ 
 **Generando tu clave pública SSH:**  
 
 Para más detalles sobre cómo crear unas claves SSH en variados sistemas operativos,  

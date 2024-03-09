@@ -21,10 +21,11 @@ consultar la correspondiente guía en GitHub: (https://help.github.com/articles/
         -rw-r--r-- 1 User 197121  92 Mar  9 01:52 known_hosts.old  
 ~~~
  **Comprueba la lista de directorio para ver si ya tiene una clave SSH pública (.pub)**
-
-    id_rsa.pub
-    id_ecdsa.pub
-    id_ed25519.pub
+ ~~~
+        id_rsa.pub
+        id_ecdsa.pub
+        id_ed25519.pub
+~~~
 ===============================================================  
 
  2. *sdf*

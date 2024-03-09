@@ -10,8 +10,8 @@ consultar la correspondiente guía en GitHub: (https://help.github.com/articles/
 ===============================================================
 1. *Comprobar tus claves SSH existentes*   
 
-       `ls -al ~/.ssh/`  
-
+        
+    `ls -al ~/.ssh/`
  ~~~   
         drwxr-xr-x 1 User 197121   0 Mar  9 16:47 ./
         drwxr-xr-x 1 User 197121   0 Mar  9 11:01 ../

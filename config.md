@@ -1,8 +1,15 @@
-**Generando tu clave pública SSH:**
-Para más detalles sobre cómo crear unas claves SSH en variados sistemas operativos, consultar la correspondiente guía en GitHub: https://help.github.com/articles/generating-ssh-keys.
+ ##Acerca de la claves SSH
+**Generando tu clave pública SSH:**  
+
+Para más detalles sobre cómo crear unas claves SSH en variados sistemas operativos,  
+consultar la correspondiente guía en GitHub: (https://help.github.com/articles/generating-ssh-keys.)
 pasos:
+
+
 ===============================================================
-1 -Comprobar tus claves SSH existentes
+1. *Comprobar tus claves SSH existentes*
+
+
  ls -al ~/.ssh/
     drwxr-xr-x 1 User 197121   0 Mar  9 16:47 ./
     drwxr-xr-x 1 User 197121   0 Mar  9 11:01 ../
@@ -16,4 +23,5 @@ pasos:
     id_ecdsa.pub
     id_ed25519.pub
 ===============================================================
+ 2. 
  cd ~/.ssh

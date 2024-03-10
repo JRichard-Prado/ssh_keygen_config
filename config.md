@@ -28,8 +28,8 @@ consultar la correspondiente guía en GitHub: (https://help.github.com/articles/
 
  2. *Generar una nueva clave SSH*  
 
-        `ssh-keygen -t ed25519 -C "your_email@example.com"`  
+       `ssh-keygen -t ed25519 -C "your_email@example.com"`  
 
-        **Nota** No admite el algoritmo Ed25519, usa:  
-        
-        `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
+       **Nota** No admite el algoritmo Ed25519, usa:  
+
+       `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`

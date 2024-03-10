@@ -5,8 +5,7 @@
 Para más detalles sobre cómo crear unas claves SSH en variados sistemas operativos,  
 consultar la correspondiente guía en GitHub: (https://help.github.com/articles/generating-ssh-keys.)  
 
-### pasos:  
-
+### pasos:
 ===============================================================
 1. *Comprobar tus claves SSH existentes*   
 
@@ -25,8 +24,7 @@ consultar la correspondiente guía en GitHub: (https://help.github.com/articles/
         id_rsa.pub
         id_ecdsa.pub
         id_ed25519.pub
-~~~
-===============================================================  
+~~~  
 
  2. *sdf*
         `cd ~/.ssh`

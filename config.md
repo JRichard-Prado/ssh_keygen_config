@@ -32,5 +32,5 @@ consultar la correspondiente guía en GitHub: (https://help.github.com/articles/
        **Nota** No admite el algoritmo Ed25519, usa:  
        `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`  
        Cuando se le pida, escriba una frase de contraseña segura.  
-       > Enter passphrase (empty for no passphrase): [Type a passphrase]
-       > Enter same passphrase again: [Type passphrase again]
+       `Enter passphrase (empty for no passphrase): [Type a passphrase]`  
+       `Enter same passphrase again: [Type passphrase again]`

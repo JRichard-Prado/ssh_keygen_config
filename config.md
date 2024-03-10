@@ -5,8 +5,8 @@
 Para más detalles sobre cómo crear unas claves SSH en variados sistemas operativos,  
 consultar la correspondiente guía en GitHub: (https://help.github.com/articles/generating-ssh-keys.)  
 
-### pasos:
-===============================================================
+## pasos:
+
 1. *Comprobar tus claves SSH existentes*   
 
         

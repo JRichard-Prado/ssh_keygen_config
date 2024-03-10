@@ -30,6 +30,6 @@ consultar la correspondiente guía en GitHub: (https://help.github.com/articles/
 
        `ssh-keygen -t ed25519 -C "your_email@example.com"`  
 
-**Nota** No admite el algoritmo Ed25519, usa:  
+       **Nota** No admite el algoritmo Ed25519, usa:  
 
        `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`

@@ -28,13 +28,35 @@ consultar la correspondiente guía en GitHub: *[Generación de una nueva clave S
 
 3. *Generar una nueva clave SSH*  
 
-       `ssh-keygen -t ed25519 -C "your_email@example.com"`  
-       **Nota** No admite el algoritmo Ed25519, usa:  
-       `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`  
-       Cuando se le pida, escriba una frase de contraseña segura.  
-       `Enter passphrase (empty for no passphrase): [Type a passphrase]`  
-       `Enter same passphrase again: [Type passphrase again]`  
+     `ssh-keygen -t ed25519 -C "your_email@example.com"`  
+     **Nota** No admite el algoritmo Ed25519, usa:  
+     `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
 
+Cuando se le pida, escriba una frase de contraseña segura.  
+
+       ```  
+       Generating public/private ed25519 key pair.
+       Enter file in which to save the key (/c/Users/User/.ssh/id_ed25519):
+       Created directory '/c/Users/User/.ssh'.
+       Enter passphrase (empty for no passphrase):
+       Enter same passphrase again:
+       Your identification has been saved in /c/Users/User/.ssh/id_ed25519
+       Your public key has been saved in /c/Users/User/.ssh/id_ed25519.pub
+       The key fingerprint is:
+       SHA256:EVMuA3Nob3KDeAJgjuv0EBpt2DipUOvsUKnzbI8VNwU jrichip@hotmail.com
+       The key's randomart image is:
+       +--[ED25519 256]--+
+       |.o.   E.+..      |
+       |+B.o  o= +       |
+       |OoB. o o= .      |
+       |+X. o +.=+       |
+       |Boo .oo+S.       |
+       |o*o  o .         |
+       | .=..            |
+       | . +             |
+       |  . .            |
+       +----[SHA256]-----+      
+       ```  
 4. *Agregar tu clave SSH al ssh-agent*  
 
  Asegúrate de que el agente ssh se esté ejecutando. Este comando ``` eval `ssh-agent -s`  ``` inicializará el agente en segundo plano y establecerá las variables de entorno apropiadas.  
@@ -43,7 +65,7 @@ consultar la correspondiente guía en GitHub: *[Generación de una nueva clave S
 ~~~  
 5. *Agregue la clave privada SSH al **agente** ssh.*
  
-       ```ssh-add c:/Users/YOU/.ssh/id_ed25519``` ó mediante ` ssh-add ~/.ssh/id_ed25519`  
+```ssh-add c:/Users/YOU/.ssh/id_ed25519``` ó mediante ` ssh-add ~/.ssh/id_ed25519`  
 
 Muestra agreagdo si la  contraseña fue enter si no ingresar password
 ~~~
@@ -63,7 +85,7 @@ Para cambiar contraseña `ssh-keygen -p -f ~/.ssh/id_ed25519
  Copia la llave SSH pública a tu portapapeles. `clip < ~/.ssh/id_ed25519.pub `  
 
  * Haga clic en la foto del [perfil](https://github.com/settings/keys) y, luego, en Settings (Configuración).
- * Haga clic en [Nueva clave SSH](https://github.com/settings/ssh/new) o en Agregar clave SSH.
- * En el campo "Clave", pega tu clave pública.
+ * Haga clic en [Nueva clave SSH](https://github.com/settings/ssh/new) o en Agregar clave SSH.  
+ * En el campo "Clave" `nano ~/.ssh/id_ed25519.pub`, pega tu clave pública.
  * Si se te solicita, confirma tu contraseña en GitHub
 

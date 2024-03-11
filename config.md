@@ -11,7 +11,7 @@ consultar la correspondiente guía en GitHub: *[Generación de una nueva clave S
 
         
     `ls -al ~/.ssh/`
- ~~~   
+ ~~~ bash 
         drwxr-xr-x 1 User 197121   0 Mar  9 16:47 ./
         drwxr-xr-x 1 User 197121   0 Mar  9 11:01 ../
         -rw-r--r-- 1 User 197121 411 Mar  9 01:39 id_ed25519
@@ -20,7 +20,7 @@ consultar la correspondiente guía en GitHub: *[Generación de una nueva clave S
         -rw-r--r-- 1 User 197121  92 Mar  9 01:52 known_hosts.old 
  ~~~
 2. *Comprueba la lista de directorio para ver si ya tiene una clave SSH pública (.pub)*
- ~~~
+ ~~~ bash
         id_rsa.pub
         id_ecdsa.pub
         id_ed25519.pub
@@ -33,8 +33,7 @@ consultar la correspondiente guía en GitHub: *[Generación de una nueva clave S
      `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
 
 Cuando se le pida, escriba una frase de contraseña segura.  
-
-       ```  
+~~~ bash
        Generating public/private ed25519 key pair.
        Enter file in which to save the key (/c/Users/User/.ssh/id_ed25519):
        Created directory '/c/Users/User/.ssh'.
@@ -56,7 +55,7 @@ Cuando se le pida, escriba una frase de contraseña segura.
        | . +             |
        |  . .            |
        +----[SHA256]-----+      
-       ```  
+~~~  
 4. *Agregar tu clave SSH al ssh-agent*  
 
  Asegúrate de que el agente ssh se esté ejecutando. Este comando ``` eval `ssh-agent -s`  ``` inicializará el agente en segundo plano y establecerá las variables de entorno apropiadas.  

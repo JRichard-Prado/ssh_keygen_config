@@ -3,7 +3,7 @@
 ## Generando tu clave pública SSH:
 
 Para más detalles sobre cómo crear unas claves SSH en variados sistemas operativos,  
-consultar la correspondiente guía en GitHub: [Generación de una nueva clave SSH y adición al agente SSH](https://help.github.com/articles/generating-ssh-keys.)  
+consultar la correspondiente guía en GitHub: [Generación de una nueva clave SSH y adición al agente SSH](https://docs.github.com/es/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)  
 
 ## pasos:
 

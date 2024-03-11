@@ -7,7 +7,7 @@ consultar la correspondiente guía en GitHub: (https://help.github.com/articles/
 
 ## pasos:
 
-1. *Comprobar tus claves SSH existentes*   
+ 1. *Comprobar tus claves SSH existentes*   
 
         
     `ls -al ~/.ssh/`
@@ -35,4 +35,21 @@ consultar la correspondiente guía en GitHub: (https://help.github.com/articles/
        `Enter passphrase (empty for no passphrase): [Type a passphrase]`  
        `Enter same passphrase again: [Type passphrase again]`  
 
- 4. *Agregar tu clave SSH al ssh-agent*
+ 4. *Agregar tu clave SSH al ssh-agent*  
+ Asegúrate de que el agente ssh se esté ejecutando  
+ Este comando ``` eval `ssh-agent -s`  ``` inicializará el agente en segundo plano y establecerá las variables de entorno apropiadas.  
+~~~
+       Agent pid 794
+~~~  
+ 5. *Agregue la clave privada SSH al **agente** ssh.*
+ 
+       ```ssh-add c:/Users/YOU/.ssh/id_ed25519``` ó mediante ` ssh-add ~/.ssh/id_ed25519`  
+
+Si la contraseña fue enter si no ingresar password
+~~~
+       Identity added: /c/Users/User/.ssh/id_ed25519 (jrichip@hotmail.com)
+~~~ 
+
+   
+ 6. *Agregar una clave SSH nueva a tu cuenta de GitHub*  
+ 

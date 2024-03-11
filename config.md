@@ -55,7 +55,7 @@ Para cambiar contraseña `ssh-keygen -p -f ~/.ssh/id_ed25519
        Key has comment 'jrichip@hotmail.com'
        Enter new passphrase (empty for no passphrase):
 ~~~  
-
+**Nota:** Para eleiminar utilice SSH KEY `rm -rf ~/.ssh/`
    
 6. *[Agregar una clave SSH nueva a tu cuenta de GitHub](https://docs.github.com/es/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)*  
 

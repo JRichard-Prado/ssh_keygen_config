@@ -70,12 +70,16 @@ Muestra agreagdo si la  contraseña fue enter si no ingresar password
 ~~~
        Identity added: /c/Users/User/.ssh/id_ed25519 (jrichip@hotmail.com)
 ~~~ 
-Para cambiar contraseña `ssh-keygen -p -f ~/.ssh/id_ed25519
-`
+Para cambiar contraseña `ssh-keygen -p -f ~/.ssh/id_ed25519` y si desea probar la conexion `ssh -T git@github.com`
 ~~~
        Key has comment 'jrichip@hotmail.com'
        Enter new passphrase (empty for no passphrase):
 ~~~  
+~~~
+Enter passphrase for key '/c/Users/User/.ssh/id_ed25519':
+Hi JRichard-Prado! You've successfully authenticated, but GitHub does not provide shell access.
+~~~ 
+
 **Nota:** Para eleiminar utilice SSH KEY `rm -rf ~/.ssh/`
    
 6. *[Agregar una clave SSH nueva a tu cuenta de GitHub](https://docs.github.com/es/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)*  
